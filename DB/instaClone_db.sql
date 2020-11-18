@@ -120,7 +120,7 @@ ALTER TABLE `users_profiles`
         ON UPDATE RESTRICT
         ON DELETE RESTRICT;
 
--- FK user_id for `users_profiles` and PK `users`
+-- FK user_id for `posts` and PK `users`
 ALTER TABLE `posts`
 
 	ADD CONSTRAINT FK_posts_users FOREIGN KEY(user_id)
@@ -150,5 +150,44 @@ ALTER TABLE `user_roles`
         ON UPDATE RESTRICT
         ON DELETE RESTRICT;
 
--- FK user_id for `user_roles` and PK `users`
+-- FK role_id for `access` and PK `roles`
+-- FK route_id for `access` and PK `routes`
 ALTER TABLE `access`
+
+ADD CONSTRAINT FK_access_roles FOREIGN KEY(role_id)
+		REFERENCES roles(id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT;        
+
+ADD CONSTRAINT FK_access_routes FOREIGN KEY(route_id)
+		REFERENCES routes(id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT;
+
+-- FK user_id for `likes` and PK `users`
+-- FK post_id for `likes` and PK `posts`
+ALTER TABLE `likes`
+
+ADD CONSTRAINT FK_likes_users FOREIGN KEY(user_id)
+		REFERENCES users(id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT;
+
+ADD CONSTRAINT FK_likes_posts FOREIGN KEY(post_id)
+		REFERENCES posts(id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT;
+
+-- FK post_id for `post_tags` and PK `posts`
+-- FK tag_id for `post_tags` and PK `tags`
+ALTER TABLE `post_tags`
+
+ADD CONSTRAINT FK_post_tags_posts FOREIGN KEY(post_id)
+		REFERENCES posts(id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT;
+
+ADD CONSTRAINT FK_post_tags_tags FOREIGN KEY(tag_id)
+		REFERENCES tags(id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT;
