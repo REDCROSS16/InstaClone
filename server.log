@@ -1,0 +1,23 @@
+20:36:54 undefined undefined [object Object] undefined
+20:36:55 undefined undefined [object Object] undefined
+20:36:55 undefined undefined [object Object] undefined
+20:37:19 undefined undefined [object Object] undefined
+20:38:42 undefined undefined undefined
+20:40:27 GET /about Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:83.0) Gecko/20100101 Firefox/83.0
+20:40:29 GET / Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:83.0) Gecko/20100101 Firefox/83.0
+20:41:5 method:GET URL:/
+20:41:17 method:GET URL:/
+20:41:30 [method:GET] [URL:/]
+20:45:31 [method:GET] [URL:/]
+20:45:32 [method:GET] [URL:/]
+20:45:33 [method:GET] [URL:/]
+20:45:35 [method:GET] [URL:/]
+20:45:36 [method:GET] [URL:/]
+20:45:47 [method:GET] [URL:/]
+20:45:50 [method:GET] [URL:/]
+20:46:23 [method:GET] [URL:/]
+20:46:23 [method:GET] [URL:/]
+20:46:34 [method:GET] [URL:/]
+20:46:41 [method:GET] [URL:/]
+20:47:16 [method:GET] [URL:/]
+20:47:25 [method:GET] [URL:/]
