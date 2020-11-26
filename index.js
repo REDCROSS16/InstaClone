@@ -15,7 +15,7 @@ app.use((req, res, next)=> {
 });
 
 // роутинг
-app.use('/', (req, res)=> {
+app.get('/', (req, res)=> {
     res.sendFile(__dirname + '/template/index.html');
 });
 

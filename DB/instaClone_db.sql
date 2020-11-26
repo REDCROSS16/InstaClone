@@ -46,7 +46,7 @@ CREATE TABLE `likes`
     `id`                INT(255)            AUTO_INCREMENT		PRIMARY KEY,
     `user_id`           INT(255)            NOT NULL,
     `post_id`           INT(255)            NOT NULL,
-    `delete_at`         TIMESTAMP           NOT NULL
+    `delete_at`         TIMESTAMP           
 );
 
 --  link table posts > tags
